@@ -51,6 +51,12 @@
       text-align: left;
       border-bottom: 1px solid #ddd;
     }
+
+    .map-container {
+    width: 50%; /* Set the width of each map container to 50% */
+    float: left; /* Float the containers left so they sit side by side */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
   </style>
   <style type="text/css"
          media="print">
@@ -122,7 +128,7 @@
       <div class="container"
            data-aos="fade-up">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <h3>About</h3>
             <p>Theme: Phonetics and Phonology</p>
           </div>
@@ -130,7 +136,7 @@
             <h3>Where</h3>
             3650 Mc Tavish St, Montreal, Quebec H3A 1Y2
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-4">
             <h3>When</h3>
             <p>19<sup>th</sup> - 20<sup>th</sup> April, 2024</p>
           </div>
@@ -392,8 +398,8 @@
           </li>
         </ul>
 
-        <h3 class="sub-heading">Fri Meeting Place: <a href="https://www.google.com/maps/place/680+Sherbrooke+St+W,+Montreal,+QC+H3A+0B8/@45.5046194,-73.5778546,17z/data=!3m1!4b1!4m10!1m2!2m1!1s680+Sherbrooke+West,+Room+1041680+Sherbrooke+West,+Room+1041!3m6!1s0x4cc91a465a4450e5:0x9fa1f856ee1ef07c!8m2!3d45.5046157!4d-73.5729837!15sCjw2ODAgU2hlcmJyb29rZSBXZXN0LCBSb29tIDEwNDE2ODAgU2hlcmJyb29rZSBXZXN0LCBSb29tIDEwNDGSARBnZW9jb2RlZF9hZGRyZXNz4AEA!16s%2Fg%2F11c5dz0w29?hl=en&entry=ttu">680 Sherbrooke West, Room 1041</a> </h3></h3>
-        <h3 class="sub-heading">Sat Meeting Place: <a href="https://www.google.com/maps/place/PGSS+Inc.+Thomson+House/@45.5043069,-73.5822031,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91a389358ea9f:0xfd8da0dc35f391cd!8m2!3d45.5043032!4d-73.5796282!16s%2Fg%2F1hc7fgyxl?entry=ttu&hl=en">3650 Mc Tavish St, Thompson House</a> </h3>
+        <h5 style="text-align: center;"><strong style="font-size: smaller;">Fri Meeting Place: <a href="https://www.google.com/maps/place/680+Sherbrooke+St+W,+Montreal,+QC+H3A+0B8/@45.5046194,-73.5778546,17z/data=!3m1!4b1!4m10!1m2!2m1!1s680+Sherbrooke+West,+Room+1041680+Sherbrooke+West,+Room+1041!3m6!1s0x4cc91a465a4450e5:0x9fa1f856ee1ef07c!8m2!3d45.5046157!4d-73.5729837!15sCjw2ODAgU2hlcmJyb29rZSBXZXN0LCBSb29tIDEwNDE2ODAgU2hlcmJyb29rZSBXZXN0LCBSb29tIDEwNDGSARBnZW9jb2RlZF9hZGRyZXNz4AEA!16s%2Fg%2F11c5dz0w29?hl=en&entry=ttu">680 Sherbrooke West, Room 1041</a> </strong></h5>
+        <h5 style="text-align: center;"><strong style="font-size: smaller;">Sat Meeting Place: <a href="https://www.google.com/maps/place/PGSS+Inc.+Thomson+House/@45.5043069,-73.5822031,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91a389358ea9f:0xfd8da0dc35f391cd!8m2!3d45.5043032!4d-73.5796282!16s%2Fg%2F1hc7fgyxl?entry=ttu&hl=en">3650 Mc Tavish St, Thompson House</a></strong> </h5>
 
         <div class="tab-content row justify-content-center"
              data-aos="fade-up"
@@ -787,19 +793,18 @@
            data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Location</h2>
+          <h2>Location and Food</h2>
         </div>
 
-        <center>
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1odK32NK10O7926KrR2DAuFzjhd9_mpQ&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.2867010987206!2d-73.58220312368007!3d45.50430693076179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a389358ea9f%3A0xfd8da0dc35f391cd!2sPGSS%20Inc.%20Thomson%20House!5e0!3m2!1sen!2sca!4v1710175075455!5m2!1sen!2sca"
-                  width="600"
-                  height="450"
-                  style="border:0;"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-        </center>
+        <left>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1odK32NK10O7926KrR2DAuFzjhd9_mpQ&ehbc=2E312F&noprof=1" width="500" height="500"></iframe>
+        </left>
+
+        <div style="width: 100px; display: inline-block;"></div> <!-- Add a div for horizontal spacing -->
+
+        <right>
+          <iframe src="https://www.google.com/maps/d/embed?mid=198hyqSfafcs8Fhe6G-jrel73E0XndGQ&ehbc=2E312F" width="500" height="500"></iframe>
+        </right>
 
     </section>
     <!-- End Contact Section -->
